@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>my firt program this pc and *</p>
+<h1>####################viewData##################</h1>
+
+
+<h1>@ViewData["xyz"]</h1>
+<h1>@ViewData["id"]</h1>
+<h1>@ViewData["city"]</h1>
+<h1>@ViewData["state"]</h1>
+
+<ul>
+    @foreach (var m in (List<string>)ViewData["abc"])
+    {
+        <li>@m</li>
+    }
+</ul>
+<h2>@Session["empname"]</h2>
+<h2>@Session["empid"]</h2>
+<h2>@Session["empcity"]</h2>
+<h2>@Session["empstate"]</h2>
+
+
+
+
+
+
+<ul>
+    @foreach (var pr in (List<string>)Session["session"])
+    {
+        <li>@pr</li>
+    }
+</ul>
